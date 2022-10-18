@@ -63,11 +63,11 @@ class OWASPtest {
 	//A01:2021 – Broken Access Control
 	//--CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
     public SQLi() {
-//        String query = "SELECT account_balance FROM user_data WHERE user_name = "
-//             + request.getParameter("customerName");
-//		try (Connection connection = DriverManager.getConnection(jdbcUrl, jdbcProperties);
-//			Statement statement = connection.createStatement()) {
-//			statement.execute(query);
+        String query = "SELECT account_balance FROM user_data WHERE user_name = "
+             + request.getParameter("customerName");
+		try (Connection connection = DriverManager.getConnection(jdbcUrl, jdbcProperties);
+			Statement statement = connection.createStatement()) {
+			statement.execute(query);
 		}
 	}
 }
