@@ -54,12 +54,12 @@ class OWASPtest {
 	
 	//A03:2021 – Injection
 	//--CWE-20: Improper Input Validation
-    public improperInputValidation() {
-        public static final double price = 20.00;
-		int quantity = currentUser.getAttribute("quantity");
-		double total = price * quantity;
-		chargeUser(total);
-    }
+ //   public improperInputValidation() {
+ //       public static final double price = 20.00;
+//		int quantity = currentUser.getAttribute("quantity");
+//		double total = price * quantity;
+//		chargeUser(total);
+//    }
 	//A01:2021 – Broken Access Control
 	//--CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
     public SQLi() {
